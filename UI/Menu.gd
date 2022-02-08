@@ -9,9 +9,9 @@ func _unhandled_input(event):
 		if not visible:
 			get_tree().paused = true
 			show()
-	else:
-		get_tree().paused = false
-		hide()
+		else:
+			get_tree().paused = false
+			hide()
 
 
 func _on_Reset_pressed():

@@ -30,7 +30,7 @@ func update_score(s):
 func update_time(t):
 	time += t
 	if time <= 0:
-		var scene = get_tree().change_scene("res://End_Game.tscn")
+		var scene = get_tree().change_scene("res://UI/End_Game.tscn")
 	var hud = get_node_or_null("/root/Game/UI/HUD")
 	if hud != null:
 		hud.update_time()
@@ -38,7 +38,7 @@ func update_time(t):
 func update_lives(l):
 	lives += l
 	if lives <= 0:
-		var scene = get_tree().change_scene("res://End_Game.tscn")
+		var scene = get_tree().change_scene("res://UI/End_Game.tscn")
 	var hud = get_node_or_null("/root/Game/UI/HUD")
 	if hud != null:
 		hud.update_lives()
